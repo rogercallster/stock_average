@@ -26,7 +26,7 @@ public class StockController {
 
     @PostMapping("/{symbol}/fetch")
     public ResponseEntity<String> fetchStockData(@PathVariable String symbol) {
-        stockDataService.fetchAndStockData(symbol);
+        stockDataService.fetchAndStoreStockData(symbol);
         return ResponseEntity.ok("Stock data fetch initiated for " + symbol);
     }
 }

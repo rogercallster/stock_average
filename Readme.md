@@ -7,6 +7,13 @@
 docker-compose up -d
 ```
 
+Logs as below 
+``
+docker-compose up -d
+WARN[0000] ~/dev/java/stock_average/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] Running 12/15
+⠋ postgres [⣿⣿⣿⣤⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿] 48.23MB / 155.7MB Pulling``
+
 ### Get Alpha Vantage API Key:
 - Sign up at [www.alphavantage.co](https://www.alphavantage.co)
 - Replace `YOUR_API_KEY_HERE` in `application.yml`
